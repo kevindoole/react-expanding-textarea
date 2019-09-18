@@ -37,7 +37,6 @@ export default class ExpandingTextarea extends Component {
 
   _adjustTextarea(node) {
     if (node) {
-      node.style.height = 0
       node.style.height = `${getHeight(node, this.props.rows)}px`
     }
   }
